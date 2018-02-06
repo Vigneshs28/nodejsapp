@@ -1,12 +1,17 @@
 {
-  "name": "node-example",
+ "name": "node-example",
   "version": "0.0.1",
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
     "node": "0.6.x"
   },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "request": "^2.83.0"
+  },
   "scripts": {
+    "test": "mocha"
     "start": "server.js"
     , "stop": "pkill --signal SIGINT node-example"
   }
