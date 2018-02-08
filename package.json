@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "mocha"
-    "start": "server.js"
-    , "stop": "pkill --signal SIGINT node-example"
+    "start": "nodejs server.js &"
+    , "stop": "killall nodejs &"
   }
 }
