@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "mocha"
-    "start": "nodejs server.js &"
+    , "start": "nodejs server.js &"
     , "stop": "killall nodejs &"
   }
 }
