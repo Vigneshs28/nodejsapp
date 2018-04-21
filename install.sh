@@ -14,14 +14,13 @@ sudo /sbin/chkconfig --levels 235 postgresql on
 sudo service postgresql start
 echo 'Database server started....'
 
-#Create database
-#cd ~/customers
-#sudo cat customer.sql | mysql --user=root --password=''
-
 echo 'Setting permission....'
 cd /home/
 sudo chmod -R 755 /home/ec2-user/
+sudo cp pg_hba.conf /var/lib/pgsql9/data/pg_hba.conf
 
+sudo service postgresql restart
+echo 'Database server re-started....'
 
-sudo -u postgres -H sh -c 'createdb nodejs; cd ~/customers/sqls/bundle; sqitch deploy db:pg:nodejs'
-echo 'Database created....'
+sudo -u postgres -H sh -c 'createdb nodejs; cd ~/customers/sql; sqitch deploy db:pg:nodejs'
+echo 'Database deployed....'
