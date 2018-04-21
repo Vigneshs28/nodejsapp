@@ -4,7 +4,6 @@ sudo set -e
 # update instance
 sudo yum -y update
 
-
 #set psql path
 sqitch config --user engine.pg.client /usr/bin/psql
 
@@ -12,6 +11,7 @@ sqitch config --user engine.pg.client /usr/bin/psql
 #start postgresql daemon
 sudo /sbin/chkconfig --levels 235 postgresql on
 sudo service postgresql start
+echo 'Database server started.'
 
 #Create database
 #cd ~/customers
