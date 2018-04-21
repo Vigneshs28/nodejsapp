@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd ~/customers
+cd /home/ec2-user/customers
 forever stopall
