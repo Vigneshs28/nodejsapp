@@ -3,5 +3,5 @@
 set +o posix
 
 cd /home/
-sudo chmod -R 755 ec2-user/
+sudo chmod -R 755 /home/ec2-user/
 

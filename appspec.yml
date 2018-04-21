@@ -12,7 +12,7 @@ permissions:
       - file
 hooks:
   BeforeInstall:
-    - location: before_install.sh
+    - location before_install.sh
       timeout: 300
       runas: root
   Install:
