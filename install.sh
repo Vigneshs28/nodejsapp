@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #sudo set -e
+set +o posix
 
 # update instance
 sudo yum -y update

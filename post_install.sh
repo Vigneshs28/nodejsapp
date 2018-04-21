@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #set -e
+et +o posix
 
 cd ~/customers
 npm install
