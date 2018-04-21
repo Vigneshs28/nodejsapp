@@ -22,5 +22,6 @@ sudo cp pg_hba.conf /var/lib/pgsql9/data/pg_hba.conf
 sudo service postgresql restart
 echo 'Database server re-started....'
 
+sudo -u postgres -H sh -c 'psql ALTER USER user_name WITH PASSWORD "123456";'
 sudo -u postgres -H sh -c 'createdb nodejs; cd ~/customers/sql; sqitch deploy db:pg:nodejs'
 echo 'Database deployed....'
