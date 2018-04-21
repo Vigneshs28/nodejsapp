@@ -5,3 +5,4 @@ appschema 2018-04-19T15:45:38Z tetra <tetra@tetra.com> # Add schema.
 customers 2018-04-19T15:53:56Z tetra <tetra@tetra.com> # Create customer table.
 data 2018-04-19T15:55:30Z tetra <tetra@tetra.com> # insert customer data.
 @v1.0.0-dev1 2018-04-21T07:37:06Z vagrant,,, <vagrant@vagrant> # Tag v1.0.0-dev1.
+@v1.1.0-dev1 2018-04-21T19:14:13Z tetra <tetra@tetra.com> # Tag v1.1.0-dev1.
