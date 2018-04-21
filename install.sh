@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-sudo set -e
+#sudo set -e
 
 # update instance
 sudo yum -y update
