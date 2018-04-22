@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#set -e
-et +o posix
+sudo set -e
+#et +o posix
 
-cd ~/customers
+cd /home/ec2-user/customers/
 npm install
 
 
@@ -21,5 +21,5 @@ fi
 # add node to startup
 hasRc=`grep "su -l $USER" /etc/rc.d/rc.local | cat`
 if [ -z "$hasRc" ]; then
-    sudo sh -c "echo 'su -l $USER -c \"cd ~/customers;sh ./run.sh\"' >> /etc/rc.d/rc.local"
+    sudo sh -c "echo 'su -l $USER -c \"cd /home/ec2-user/customers;sh ./run.sh\"' >> /etc/rc.d/rc.local"
 fi
