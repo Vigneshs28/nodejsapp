@@ -26,6 +26,7 @@ psql -U postgres -c "ALTER USER postgres WITH PASSWORD '123456'"
 
 sudo -u postgres -H sh -c 'createdb nodejs' 
 sudo -u postgres -H sh -c 'cd /home/ec2-user/customers/sql/; sqitch --engine pg deploy db:pg:nodejs'
+sudo service postgresql restart
 echo 'Database deployed....'
 
 
