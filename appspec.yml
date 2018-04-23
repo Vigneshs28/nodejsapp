@@ -1,4 +1,4 @@
-version: 0.0
+version: 1.0
 os: linux
 files:
   - source: /
@@ -32,7 +32,3 @@ hooks:
     - location: validate.sh
       timeout: 60
       runas: ec2-user
-  AllowTraffic:
-   - location: run.sh
-     timeout: 120
-     runas: root
