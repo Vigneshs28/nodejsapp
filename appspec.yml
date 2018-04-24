@@ -32,3 +32,11 @@ hooks:
     - location: validate.sh
       timeout: 60
       runas: ec2-user
+  BeforeAllowTraffic:
+    - location: stop.sh
+      timeout: 60
+      runas: root
+  AllowTraffic:
+    - location: run.sh
+      timeout: 60
+      runas: root
