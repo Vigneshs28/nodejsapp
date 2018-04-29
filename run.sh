@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set +o posix
 
-cd /home/ec2-user/customers
+cd /home/ec2-user/customersapp
 forever start app.js
