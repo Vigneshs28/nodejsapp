@@ -1,5 +1,5 @@
 {
- "name": "node-example",
+  "name": "node-example",
   "version": "0.0.1",
   "dependencies": {},
   "engines": {
@@ -11,8 +11,8 @@
     "request": "^2.83.0"
   },
   "scripts": {
-    "test": "mocha"
-    "start": "server.js"
-    , "stop": "pkill --signal SIGINT node-example"
+    "test": "mocha",
+    "start": "server.js",
+    "stop": "pkill --signal SIGINT node-example"
   }
 }
