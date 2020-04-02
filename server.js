@@ -2,7 +2,7 @@ var http = require('http');
 //loads http module
 var app=http.createServer(function (req, res) {
 //creates server
-  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.writeHead(200, {'Content-Type': 'text/html'});
   //sets the right header and status code
   res.end('<html><header><title>This is title</Welcome to Vignesh NodeJS Application></header><body>Cheers!!! Node.js Deployed on Local Server</body></html>');
   //outputs string with line end symbol
